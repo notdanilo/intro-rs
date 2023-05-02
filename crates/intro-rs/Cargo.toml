@@ -3,6 +3,8 @@ name = "intro-rs"
 version = "0.1.0"
 edition = "2021"
 authors = ["Danilo Guanabara <danilo@sensorial.systems>", "SLIMPANDA\\janio <jani.peltonen@gmail.com>"]
+description = "A framework for creating 4kb intros."
+license = "MIT"
 
 [features]
 logger = []
