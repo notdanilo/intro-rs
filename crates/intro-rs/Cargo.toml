@@ -5,6 +5,9 @@ edition = "2021"
 authors = ["Danilo Guanabara <danilo@sensorial.systems>", "SLIMPANDA\\janio <jani.peltonen@gmail.com>"]
 description = "A framework for creating 4kb intros."
 license = "MIT"
+documentation = "https://docs.rs/intro-rs"
+homepage = "https://github.com/notdanilo/intro-rs"
+repository = "https://github.com/notdanilo/intro-rs"
 
 [features]
 logger = []
