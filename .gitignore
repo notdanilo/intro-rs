@@ -2,6 +2,8 @@
 /target
 **/*.rs.bk
 
+crates/intro-rs/target
+
 # Default files. Should be unlisted
 mini.exe
 dbg_out.txt
