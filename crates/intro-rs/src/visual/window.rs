@@ -231,7 +231,7 @@ impl Window {
     pub fn manage(&self) -> Option<Command> {
         #[cfg(feature = "logger")]
         {
-            if !handle_message(_window) {
+            if !handle_message(self._window) {
                 return Some(Command::Exit);
             }
         }
