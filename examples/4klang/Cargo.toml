@@ -1,5 +1,5 @@
 [package]
-name = "namekusei"
+name = "_4klang"
 version = "0.1.0"
 authors = ["Danilo Guanabara <danilo@sensorial.systems>"]
 edition = "2021"
@@ -20,5 +20,5 @@ opt-level = 0
 panic = "abort"
 
 [dependencies]
-intro-rs = { path = "crates/intro-rs" }
-four-klang = { path = "crates/four-klang" }
+intro-rs = { path = "../../crates/intro-rs" }
+four-klang = { path = "../../crates/four-klang" }

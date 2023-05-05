@@ -1,0 +1,23 @@
+[package]
+name = "namekusei"
+version = "0.1.0"
+authors = ["Danilo Guanabara <danilo@sensorial.systems>"]
+edition = "2021"
+
+[features]
+logger = [ "intro-rs/logger" ]
+fullscreen = [ "intro-rs/fullscreen" ]
+
+[profile.release]
+lto = true 
+codegen-units = 1    # should be 1, test diff
+opt-level = "z"       # is this highest  
+panic = 'abort'
+
+[profile.dev]
+lto = true 
+opt-level = 0
+panic = "abort"
+
+[dependencies]
+intro-rs = { path = "../../crates/intro-rs" }
