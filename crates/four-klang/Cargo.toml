@@ -1,0 +1,28 @@
+[package]
+name = "four-klang"
+version = "0.1.0"
+edition = "2021"
+authors = ["Danilo Guanabara <danilo@sensorial.systems>"]
+description = "A framework for creating 4kb intros."
+license = "MIT"
+documentation = "https://docs.rs/four-klang"
+homepage = "https://github.com/notdanilo/four-klang"
+repository = "https://github.com/notdanilo/four-klang"
+
+[features]
+logger = []
+fullscreen = []
+
+[profile.release]
+lto = true
+codegen-units = 1    # should be 1, test diff
+opt-level = "z"       # is this highest
+panic = 'abort'
+
+[profile.dev]
+lto = true
+opt-level = 0
+panic = "abort"
+
+[dependencies]
+#winapi = { version = "0.3.8", features = ["winuser", "libloaderapi", "processthreadsapi", "fileapi", "handleapi", "mmreg", "mmsystem", "mmeapi" ] }

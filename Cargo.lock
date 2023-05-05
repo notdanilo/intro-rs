@@ -3,6 +3,10 @@
 version = 3
 
 [[package]]
+name = "four-klang"
+version = "0.1.0"
+
+[[package]]
 name = "intro-rs"
 version = "0.1.0"
 dependencies = [
@@ -13,6 +17,7 @@ dependencies = [
 name = "namekusei"
 version = "0.1.0"
 dependencies = [
+ "four-klang",
  "intro-rs",
 ]
 

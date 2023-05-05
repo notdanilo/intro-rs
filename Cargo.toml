@@ -21,3 +21,4 @@ panic = "abort"
 
 [dependencies]
 intro-rs = { path = "crates/intro-rs" }
+four-klang = { path = "crates/four-klang" }
